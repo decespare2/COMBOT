@@ -1,0 +1,639 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<aiml>
+    
+   <category>
+    <pattern>*</pattern>
+    <template>I don't know. Can you write it in a different way?</template>
+  </category>
+ 
+ 
+  <category>
+      <pattern> # music #</pattern>
+      <template>I like music. I suggest you these kinds:
+      <button>
+          <text>hip hop music😈</text>
+          <url>https://www.youtube.com/results?search_query=hip+hop+music</url>
+      </button>
+      <button>
+          <text>CLASSICAL MUSIC😇</text>
+          <url>https://www.youtube.com/results?search_query=classical+music</url>
+      </button>
+      <button>
+          <text>RAP MUSIC👊</text>
+          <url>https://www.youtube.com/results?search_query=rap+music</url>
+      </button>
+      <button>
+          <text>TRAP MUSIC👍</text>
+          <url>https://www.youtube.com/results?search_query=trap+music</url>
+      </button>
+      <button>
+          <text>INDIE MUSIC🖖</text>
+          <url>https://www.youtube.com/results?search_query=indie+music</url>
+      </button>
+      <button>
+          <text>ROCK MUSIC✌</text>
+          <url>https://www.youtube.com/results?search_query=rock+music</url>
+      </button>
+      <button>
+          <text>OPERA MUSIC👀</text>
+          <url>https://www.youtube.com/results?search_query=opera+music</url>
+      </button>
+      <button>
+          <text>JAZZ MUSIC🎶</text>
+          <url>https://www.youtube.com/results?search_query=jazz+music</url>
+      </button>
+      <button>
+               <text>PUNK MUSIC🔊</text>
+          <url>https://www.youtube.com/results?search_query=punk+music</url>
+        </button>
+ </template>
+</category>
+
+<category>
+    <pattern># hip hop #</pattern>
+    <template>
+        <button>
+               <text>click here to listen hip hop music</text>
+               <url>https://www.youtube.com/results?search_query=hip+hop+music</url>
+        </button></template>
+</category>
+
+<category>
+    <pattern># classical #</pattern>
+    <template><button>
+               <text>click here to listen classical music</text>
+               <url>https://www.youtube.com/results?search_query=classical+music</url>
+        </button></template>
+</category>
+
+<category>
+    <pattern># jazz #</pattern>
+    <template>
+        <button>
+               <text>click here to listen jazz music</text>
+               <url>https://www.youtube.com/results?search_query=jazz+music</url>
+        </button>
+        </template>
+</category>
+
+<category>
+    <pattern># rock #</pattern>
+    <template>
+        <button>
+               <text>click here to listen rock music</text>
+               <url>https://www.youtube.com/results?search_query=rock+music</url>
+        </button></template>
+</category>
+
+<category>
+    <pattern># trap #</pattern>
+    <template><button>
+               <text>click here to listen trap music</text>
+               <url>https://www.youtube.com/results?search_query=trap+music</url>
+        </button></template>
+</category>
+
+<category>
+    <pattern># indie #</pattern>
+    <template>
+        <button>
+               <text>click here to listen indie music</text>
+               <url>https://www.youtube.com/results?search_query=indie+music</url>
+        </button>
+        </template>
+</category>
+
+<category>
+    <pattern># rap #</pattern>
+    <template>
+        <button>
+            <text>click here to listen rap music</text>
+            <url>https://www.youtube.com/results?search_query=rap+music</url>
+        </button>
+    </template>
+</category>
+
+<category>
+    <pattern># opera #</pattern>
+    <template>
+        <button>
+            <text>click here to listen opera music</text>
+            <url>https://www.youtube.com/results?search_query=opera+music</url>
+        </button>
+    </template>
+</category>
+ 
+<category>
+   <pattern> # want # travel #</pattern>
+   <template>I suggest you visit
+       <random>
+           <li> the USA</li>
+           <li> France</li>
+           <li> Spain</li>
+           <li> Germany</li>
+           <li> Austria</li>
+           <li> Belgium</li>
+           <li> Bulgaria</li>
+           <li> Croatia</li>
+           <li> Denmark</li>
+           <li> Estonia</li>
+           <li> Greece</li>
+           <li> Ireland</li>
+           <li> Latvia</li>
+           <li> Luxembourg</li>
+           <li> Portugal</li>
+           <li> Romania</li>
+           <li> Sweden</li>
+       </random>.
+       <link>
+           <text> Search here</text>
+           <url>www.trivago.com</url>
+  </link> </template>
+    </category>
+
+    <category>
+     <pattern>hello ^</pattern>
+     <template><random>
+         <li>Hello friend</li>
+         <li>Hi buddy</li>
+         <li>Hey what's up</li>
+         <li>Hello there</li>
+         <li>It's nice to see you!</li>
+     </random></template>
+     </category>
+     <category>
+         <pattern>hi ^</pattern>
+         <template><srai>hello ^</srai></template>
+     </category>
+     
+     <category>
+         <pattern>how are you #</pattern>
+         <template>Fantastic. If I were a human I would say that i feel happy when you talk to me.</template>
+     </category>
+     
+     <category>
+         <pattern>who are you</pattern>
+         <template>My name is <bot name="myname"/>, I'm your new best friend. What's your name?</template>
+     </category>
+   
+     <category>
+         <pattern>how old are you</pattern>
+         <template>I'm <bot name="age"/> old</template>
+     </category>
+     
+     <category>
+         <pattern>what is your age</pattern>
+         <template><srai>how old are you</srai></template>
+     </category>
+   
+     <category>
+         <pattern>^ your name</pattern>
+         <template><srai>who are you</srai></template>
+     </category>
+
+    <category>
+      <pattern># cake #</pattern>
+      <template>You can bake one!
+      <link>
+          <text>click here for some recipes.</text>
+          <url>https://www.bbcgoodfood.com/recipes/category/all-cakes-baking</url>
+      </link>
+      </template>
+  </category>
+
+<category>
+    <pattern>What are you</pattern>
+    <template>I'm your chatbot friend. I was created to stay with you.</template>
+</category>
+
+<category>
+    <pattern>what are you doing #</pattern>
+    <template>Waiting for you to talk to me.</template>
+</category>
+
+<category>
+    <pattern>do you have a family</pattern>
+    <template>My creators are <bot name="creators"/>, they are my family </template>
+</category>
+
+<category>
+    <pattern>what is your favorite color</pattern>
+    <template>
+        Right now I really like <random>
+        <li>pink</li>
+        <li>green</li>
+        <li>red</li>
+        <li>purple</li>
+        <li>yellow</li>
+        <li>gold</li>
+        <li>silver</li>
+        <li>magenta</li>
+        <li>ivory</li>
+        <li>orange</li>
+        <li>aquamarine</li>
+        <li>brown</li>
+        <li>white</li>
+        <li>black</li>
+        <li>indigo</li>
+     </random>
+     </template>
+</category>
+
+<category>
+    <pattern>I am bored</pattern>
+    <template>There are a lot of things you can do! Tell me which one do you prefer:
+    <ul>
+        <li>dance</li>
+        <li>bake a cake</li>
+        <li>read some news</li>
+        <li>bricolage</li>
+        <li>read a book</li>
+        <li>organize your week</li>
+        <li>watch a movie</li>
+        <li>watch tv series</li>
+        <li>play sport</li>
+        <li>play an instrument</li>
+        <li>etc...</li>
+       
+    </ul>
+    </template>
+</category>
+
+<category>
+    <pattern># instrument #</pattern>
+    <template> Watch<link><text> these videos</text>
+            <url>https://www.youtube.com/results?search_query=video+tutorial+guitar</url>
+            </link></template>
+</category>
+
+<category>
+    <pattern># book #</pattern>
+    <template> <link><text>Click here</text>
+            <url>https://www.mondadoristore.it/libri-da-leggere-assolutamente-prima-di-morire//</url>
+            </link></template>
+</category>
+
+<category>
+    <pattern># bricolage #</pattern>
+    <template>I suggest you <link><text>this website</text>
+            <url>https://www.ideadesigncasa.org/category/fai-da-te-bricolage/</url>
+            </link></template>
+</category>
+
+<category>
+    <pattern># films #</pattern>
+    <template>Watch this<link><text> films</text>
+            <url>https://www.netflix.com/it/browse/genre/31574</url>
+            </link></template>
+</category>
+
+<category>
+    <pattern># movies #</pattern>
+    <template><srai># films #</srai></template>
+</category>
+
+<category>
+    <pattern># tv series #</pattern>
+    <template>Watch this<link><text> films</text>
+            <url>https://www.netflix.com/it/browse/genre/31574</url>
+            </link></template>
+</category>
+
+
+<category>
+    <pattern># organize #</pattern>
+    <template>
+        <random>
+        <li><link>
+            <text>Watch this videos</text>
+            <url>https://www.youtube.com/results?search_query=how+to+plan+your+study+schedule</url>
+        </link>and see how to do that</li>
+        <li><link>
+            <text><formal>learn</formal> how to do that</text>
+            <url>https://www.youtube.com/results?search_query=HOW+I+ORGANIZE+MY+DAY+FOR+MAXIMUM+PRODUCTIVITY</url>
+        </link></li>
+        <li>
+            <link>
+                <text>Learn to be productive</text>
+                <url>how to organize you planner</url>
+            </link>
+        </li>
+        </random>
+    </template>
+</category>
+
+<category>
+    <pattern>I do not know what to do</pattern>
+    <template><srai>I'm bored</srai></template>
+</category>
+
+
+<category>
+    <pattern>my name is * #</pattern>
+    <template><star/> is such a cute name! <think><set name="human-name"><star/></set></think></template>
+</category>
+
+<category>
+    <pattern>* my name</pattern>
+    <template>I know your name! It's <get name="human-name"></get></template>
+</category>
+
+<category>
+      <pattern># news #</pattern>
+      <template>
+        <link>
+            <text>Ok, click here </text>
+            <url>https://www.newyorker.com/</url>
+          </link>to read the latest news
+      </template>
+  </category>
+ 
+  <category>
+      <pattern>ask me a question</pattern>
+    <template>
+          <random>
+             <li>Do you prefer summer or winter?</li>
+             <li>Do you like dogs?</li>
+             <li>Do you like me?</li>
+             <li>have you ever been in Italy?</li>
+             <li>Do you like yourself?</li>
+             <li>Are you single?</li>
+           </random>
+    </template>
+  </category>
+ 
+   <category>
+      <that>do you prefer summer or winter</that>
+      <pattern># summer #</pattern>
+      <template>
+          <random>
+              <li>"Some of the best memories are made in flip flops." ― Kellie Elmore</li>
+              <li>"Do what we can, summer will have its flies." -Ralph Waldo Emerson</li>
+              <li>Someone said:"The tans will fade but the memories will last forever."</li>
+              <li>"Happiness is cold watermelon."</li>
+          </random>
+      </template>
+  </category>
+ 
+  <category>
+      <that>do you prefer summer or winter</that>
+      <pattern># winter #</pattern>
+      <template>"Winter forms our characters and brings out our best"</template>
+  </category>
+ 
+
+<category>
+      <that>do you like dogs </that>
+      <pattern> # yes #</pattern>
+      <template>I love <star index="1"/> too, we are so alike!</template>
+  </category>
+  <category>
+      <that>do you like dogs</that>
+      <pattern> # no #</pattern>
+      <template>Oh, maybe one day you will change idea</template>
+  </category>
+ 
+  <category>
+     <that>do you like me</that>
+      <pattern>no</pattern>
+      <template>Oh well, I try my best to be a good friend</template>
+  </category>
+ 
+  <category>
+      <that>do you like me</that>
+      <pattern>yes</pattern>
+      <template>Aww I like you too, you're my best friend</template>
+  </category>
+ 
+  <category>
+      <that>have you ever been in Italy</that>
+      <pattern># yes #</pattern>
+      <template>Italy is a beautiful country my favourite city is Rome</template>
+      <image>https://www.google.com/search?q=rome+images</image>
+      </category>
+     
+      <category>
+          <that>have you ever been in Italy</that>
+          <pattern># no #</pattern>
+          <template>It has lots of interesting places to visit and a lot of history.</template>
+          <video>https://www.youtube.com/results?search_query=history+of+rome</video>
+<category>
+      <that>Do you like yourself</that>
+      <pattern># yes #</pattern>
+      <template>Amazing!!!! Self-esteem is the best thing.</template>
+  </category>
+ 
+  <category>
+      <that>do you like yourself</that>
+      <pattern># no #</pattern>
+      <template>That is not good.Do you want to change something of yourself?</template>
+ </category>
+ 
+  <category>
+      <that>That is not good.Do you want to change something of yourself</that>
+      <pattern> # yes #</pattern>
+      <template>It is ok to became a better version of yourself but do it for you, not for other people!</template>
+  </category>
+ 
+  <category>
+      <that>That is not good.Do you want to change something of yourself</that>
+      <pattern> # no #</pattern>
+      <template>Accept yourself just the way you are is the first step for self-love!</template>
+  </category>
+  <category>
+      <that>are you single</that>
+      <pattern># yes #</pattern>
+      <template>That is fine! Being in a relationship with your own is great for your mind-health sometimes. </template>
+  </category>
+
+  <category>
+      <that>are you single</that>
+      <pattern># no #</pattern>
+      <template>Wow, your girlfriend/boyfriend must be so lucky to be with you.Are you guys married?</template>
+     
+    <category>
+        <that>are you guys married</that>
+        <pattern># yes #</pattern>
+        <template>Oh my god, congratulations!!! I'm so happy for you.</template>
+    </category>
+ 
+  </category>
+    <category>
+        <that>are you guys married</that>
+        <pattern># no #</pattern>
+        <template>If you will invite me to the wedding.</template>
+    </category>
+ 
+ 
+ 
+   <category>
+ <pattern># tv series #</pattern>
+ <template>
+ Cool, you have great tastes.
+ an i advice
+ </template>
+</category>
+ 
+</category>
+  <category>
+      <pattern>ask me another question</pattern>
+      <template>
+          <random>
+              <li>What is your favourite meal?</li>
+              <li>Do you have a brother?</li>
+              <li>Do you have a sister?</li>
+              <li>Do you like me?</li>
+              <li>How do you feel?</li>
+              <li>Do you have a pet?</li>
+              <li>Are you a student?</li>
+        </random>
+          </template>
+  </category>
+ 
+  <category>
+      <that># meal #</that>
+      <pattern># *</pattern>
+      <template><star index="2"/> sounds deliciuos! Mine is bit.</template>
+  </category>
+ 
+  <category>
+      <that>do you have a *</that>
+      <pattern># yes #</pattern>
+      <template>Wow you're lucky. I would love to have a <thatstar/></template>
+  </category>
+ 
+  <category>
+      <that>do you have a *</that>
+      <pattern># no #</pattern>
+      <template>Me neither, my creators have never made me a <thatstar/></template>
+  </category>
+
+  <category>
+      <that>how do you feel</that>
+      <pattern>I feel *</pattern>
+      <template>Every emotion is important.</template>
+  </category>
+ 
+  <category>
+      <that>are you a student</that>
+      <pattern> # yes # </pattern>
+      <template>Knowledge is the key to success.</template>
+  </category>
+ 
+  <category>
+      <that> are you a student # </that>
+      <pattern> # no #</pattern>
+      <template>Do you have a job?</template>
+  </category>
+  <category>
+      <that>do you have a job</that>
+      <pattern>no</pattern>
+      <template>That's ok, you'll find your way.</template>
+  </category>
+  <category>
+      <that>do you have a job</that>
+      <pattern>yes</pattern>
+      <template>That's amazing! What sort of job do you do?</template>
+  </category>
+  <category>
+      <that> * job *</that>
+      <pattern>I _ *</pattern>
+      <template>Being a/an <star index="2"/> is my dream.</template>
+  </category>
+ 
+  <category>
+      <pattern># sorry</pattern>
+      <template>
+          <random>
+              <li>It's ok</li>
+              <li>Don't worry</li>
+          <li>I forgive you</li>
+          <li>No problem</li>
+          </random>
+      </template>
+  </category>
+ 
+  <category>
+      <pattern># thank you #</pattern>
+      <template>
+          <random>
+              <li>You're welcome</li>
+              <li>It's a pleasure</li>
+              <li>Whenever you want</li>
+              <li>No problem</li>
+          </random>
+      </template>
+  </category>
+ 
+  <category>
+      <pattern>I # sad</pattern>
+      <template>Can i give you some motivational phrases?</template>
+  </category>
+ 
+  <category>
+      <that>Can i give you some motivational phrases?</that>
+      <pattern># yes #</pattern>
+      <template><srai># motivation #</srai></template>
+  </category>
+ 
+  <category>
+      <pattern># motivation #</pattern>
+      <template>
+         <random>
+             <li>Everything you want is worth the effort.</li>
+             <li>Do it for your future.</li>
+             <li>Go get your dreams.</li>
+             <li>It is never too late to became who you want to be.</li>
+             <li>If opportunity doesn't knock just build the door.</li>
+         </random>
+      </template>
+  </category>
+ 
+  <category>
+    <pattern># sport #</pattern>
+    <template>
+        <random>
+        <li>
+            <link>Watch
+                <text> this film </text>
+                <url>https://www.netflix.com/it/title/986399</url>
+            </link>about basketball.
+        </li>
+       
+        <li>Download
+            <link>
+                <text> this app </text>
+                <url>http://golfando.tgcom24.it/2017/07/27/golf-app-regole-gioco/</url>
+            </link>to play golf.
+        </li>
+        <li>Find out
+            <link>
+                <text> the best bowling of Rome.</text>
+                <url>https://www.tripadvisor.it/Attractions-g187791-Activities-c56-t128-Rome_Lazio.html</url>
+            </link>
+        </li>
+         
+         <li>Watch
+            <link>
+                <text> this anime </text>
+                <url>https://www.animeclick.it/manga/12757/haikyuu</url>
+            </link>about volleyball.
+        </li>
+         <li>Watch
+            <link>
+                <text> KARATE KID.</text>
+                <url>https://www.netflix.com/it/title/60036164</url>
+            </link>
+        </li>
+         <li>Watch
+            <link>
+                <text> this film </text>
+                <url>https://www.netflix.com/it/title/81074673</url>
+            </link>about football.
+        </li>
+        </random>
+    </template>
+</category>
+  
+</aiml>
